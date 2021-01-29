@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="extra.Listeners"/>
+	</listeners>
+	<test name="Test">
+		<classes>
+			<class name="main_tests.HomePageTest" />
+			<class name="main_tests.SignInSingleUserTest" />
+			<class name="main_tests.SignInMultipleUserTest" />
+			<class name="add_to_cart_test.AddToCartSingleUserTest" />
+			<class name="add_to_cart_test.AddToCartMultipleProductTest" />
+			<class name="add_to_cart_test.AddToCartMultipleUserAndProductTest" />
+		</classes>
+	</test>
+</suite> 

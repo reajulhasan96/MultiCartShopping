@@ -1,0 +1,102 @@
+# How many ways can we define a String?--String is a pre-build class in java.
+Ans: 2 ways. --(1)String Literal. Ex: String a = "Hello World";
+		       (2)By creating object of String. Ex: String s = new String();
+		   
+# Can we test APIs or web services using selenium webdriver?
+Ans: NO, Selenium webdirver uses borwser's native methods to automate the web applications.
+	 Since web services are headless, we cannot automate web services by using selenium.
+	 
+# What are the testing type supported by selenium webdriver?
+Ans: Selenium webdriver can be used for performing automated functional and regression testing.
+		   
+# What is an Xpath?
+Ans: Xpath is one of the locators supported by selenium webdriver. Xpath or XML path is a query
+	 language for selecting nodes from html documents.
+
+# Difference between Absolute Xpath and Relative Xpath?
+Ans: Absolute Xpath:- Locating an element by using an XML expression begins from root node and by 
+	traverse parent child node, html node in case of web pages. Slight change of any element, 
+	absolute Xpath might fails.
+	Relative Xpath:- Locating an element by using an XML expression begins from anywhere in the
+	html document. Changes of other element won't effect on relative Xpath. ***Mostly Recommended
+	to use the Relative Xpath.***
+	
+# How can we locate elements using their text in Xpath?
+Ans: //tagName[text(), 'the exact text']-- text() is a method and inside '' the exact text present.
+
+# How can we move to nth child element using Xpath?
+Ans: There are 2 way. -- (1) Using index. Ex: tagName[2]
+						 (2) Using position(). Ex: tagName[position()=3]
+						 
+# What is syntax of finding element by class/id using CSS Selector?
+Ans: Class: Either tagName.className(value of class attribute) or .className(value of class attribute).									
+			Selects all the elements with the same class name.
+	 ID: Either tagName#id(value of id attribute) or #id(value of id attribute).
+	  	  Because id is unique for single element it selects single element.
+	  	  
+# How can we launch different browsers in selenium webdriver?
+Ans: By creating an instance of driver of a particular browser.
+	 ex: WebDriver driver = new ChromeDriver();
+
+# What is the difference between close and quit command?
+Ans: driver.close() --Use for close the current browser having focus i.e. closes current tab on screen.
+	 driver.quit() --Use for close all the browser i.e. closes the whole driver.
+	 
+# How to switch between multiple windows in selenium?
+Ans: Selenium has driver.getWindowHandles() and driver.switchTo().window("windowHandleName") commands
+	 to work with multiple windows.
+	 The driver.getWindowHandles() command returns list of ids corresponding to each window and on 
+	 passing a particular window handle to driver.switchTo().window("windowHandleName") command we can
+	 switch control/focus on that particular window.
+	 Syntax:
+	  for(String windowHandle: driver.getWindowHandles())
+	  		{
+	  			driver.switchTo().window("windowHandle");
+	  		 }
+	 
+# What are the main components or main terminologies in cucumber automation? 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+** How do you open up your browser?
+** Difference between implicit and explicit time wait?
+** No such element exception?
+** Parent child x-path!!
+** How will you build your basic frame work?
+** How many links in a page?
+** Mouse movement!!
+** How to switch windows?
+** How to handle pop-handle?
+** Sytem.getproperty?
+** Difference between fetch and match? Git
+** HOw to handle merge conflict in git?
+** How do you store your element? github
+** Method overloading and overrding?
+** Final, finally, finalize ?
+** Which test case you run as regression tes?

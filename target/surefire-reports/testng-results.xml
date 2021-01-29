@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-21T15:18:55 EST" name="MultiCart.com" finished-at="2021-01-21T15:19:36 EST" duration-ms="40744">
+    <groups>
+    </groups>
+    <test started-at="2021-01-21T15:18:55 EST" name="Home Page" finished-at="2021-01-21T15:19:08 EST" duration-ms="13356">
+      <class name="multicart.pages.test.HomePageTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:multicart.pages.test.HomePageTest@134d26af]" started-at="2021-01-21T15:18:55 EST" name="openBrowser" finished-at="2021-01-21T15:19:06 EST" duration-ms="10826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="homePage()[pri:0, instance:multicart.pages.test.HomePageTest@134d26af]" started-at="2021-01-21T15:19:06 EST" name="homePage" finished-at="2021-01-21T15:19:08 EST" duration-ms="2178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:multicart.pages.test.HomePageTest@134d26af]" started-at="2021-01-21T15:19:08 EST" name="closeBrowser" finished-at="2021-01-21T15:19:08 EST" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- multicart.pages.test.HomePageTest -->
+    </test> <!-- Home Page -->
+    <test started-at="2021-01-21T15:19:09 EST" name="Single User Sign In" finished-at="2021-01-21T15:19:21 EST" duration-ms="12180">
+      <class name="multicart.pages.test.SignInSingleUserTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:multicart.pages.test.SignInSingleUserTest@7502291e]" started-at="2021-01-21T15:19:09 EST" name="openBrowser" finished-at="2021-01-21T15:19:18 EST" duration-ms="9086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="signIn()[pri:0, instance:multicart.pages.test.SignInSingleUserTest@7502291e]" started-at="2021-01-21T15:19:18 EST" name="signIn" finished-at="2021-01-21T15:19:20 EST" duration-ms="1669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:multicart.pages.test.SignInSingleUserTest@7502291e]" started-at="2021-01-21T15:19:20 EST" name="logOut" finished-at="2021-01-21T15:19:21 EST" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- multicart.pages.test.SignInSingleUserTest -->
+    </test> <!-- Single User Sign In -->
+    <test started-at="2021-01-21T15:19:21 EST" name="Multiple User Sign In" finished-at="2021-01-21T15:19:36 EST" duration-ms="14324">
+      <class name="multicart.pages.test.SignInMultipleUserTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:multicart.pages.test.SignInMultipleUserTest@5674e1f2]" started-at="2021-01-21T15:19:21 EST" name="openBrowser" finished-at="2021-01-21T15:19:30 EST" duration-ms="8717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="signIn(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:multicart.pages.test.SignInMultipleUserTest@5674e1f2]" started-at="2021-01-21T15:19:30 EST" name="signIn" data-provider="userdata" finished-at="2021-01-21T15:19:33 EST" duration-ms="2679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sm.hasan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password01]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[SM HASAN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method signature="signIn(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:multicart.pages.test.SignInMultipleUserTest@5674e1f2]" started-at="2021-01-21T15:19:33 EST" name="signIn" data-provider="userdata" finished-at="2021-01-21T15:19:35 EST" duration-ms="2654" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[reajul.hasan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password02]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[REAJUL HASAN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signIn -->
+        <test-method is-config="true" signature="logOut()[pri:0, instance:multicart.pages.test.SignInMultipleUserTest@5674e1f2]" started-at="2021-01-21T15:19:35 EST" name="logOut" finished-at="2021-01-21T15:19:36 EST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+      </class> <!-- multicart.pages.test.SignInMultipleUserTest -->
+    </test> <!-- Multiple User Sign In -->
+  </suite> <!-- MultiCart.com -->
+</testng-results>

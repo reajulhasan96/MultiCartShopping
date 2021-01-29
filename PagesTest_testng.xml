@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MultiCart.com">
+	<listeners>
+		<listener class-name="baseresources.Listeners" />
+	</listeners>
+	<test name="Home Page">
+		<classes>
+			<class name="multicart.pages.test.HomePageTest" />
+		</classes>
+	</test>
+	<test name="Single User Sign In">
+		<classes>
+			<class name="multicart.pages.test.SignInSingleUserTest" />
+		</classes>
+	</test>
+	<test name="Multiple User Sign In">
+		<classes>
+			<class name="multicart.pages.test.SignInMultipleUserTest" />
+		</classes>
+	</test>
+</suite> 

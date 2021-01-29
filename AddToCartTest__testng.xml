@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MultiCart.com">
+	<listeners>
+		<listener class-name="baseresources.Listeners" />
+	</listeners>
+	<test name="AddToCart Single User">
+		<classes>
+			<class name="multicart.addtocart.test.AddToCartSingleUserTest" />
+		</classes>
+	</test>
+	<test name="AddToCart Single User Multiple Product">
+		<classes>
+			<class
+				name="multicart.addtocart.test.AddToCartMultipleProductTest" />
+		</classes>
+	</test>
+	<test name="AddToCart Multiple User Multiple Product">
+		<classes>
+			<class
+				name="multicart.addtocart.test.AddToCartMultipleUserAndProductTest" />
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiCart.com]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="baseresources.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Single User Sign In(failed)" verbose="0">
+    <classes>
+      <class name="multicart.pages.test.SignInSingleUserTest">
+        <methods>
+          <include name="signIn"/>
+          <include name="openBrowser"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- multicart.pages.test.SignInSingleUserTest -->
+    </classes>
+  </test> <!-- Single User Sign In(failed) -->
+  <test thread-count="5" name="Multiple User Sign In(failed)" verbose="0">
+    <classes>
+      <class name="multicart.pages.test.SignInMultipleUserTest">
+        <methods>
+          <include name="signIn" invocation-numbers="0 1"/>
+          <include name="logOut"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- multicart.pages.test.SignInMultipleUserTest -->
+    </classes>
+  </test> <!-- Multiple User Sign In(failed) -->
+</suite> <!-- Failed suite [MultiCart.com] -->

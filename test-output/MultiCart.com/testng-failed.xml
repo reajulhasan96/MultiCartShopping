@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiCart.com]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="baseresources.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="AddToCart(failed)">
+    <classes>
+      <class name="multicart.addtocart.test.AddToCartSingleUserTest">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="logOut"/>
+          <include name="addToCart"/>
+        </methods>
+      </class> <!-- multicart.addtocart.test.AddToCartSingleUserTest -->
+      <class name="multicart.addtocart.test.AddToCartMultipleUserAndProductTest">
+        <methods>
+          <include name="signIn" invocation-numbers="0 1"/>
+          <include name="homePage"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- multicart.addtocart.test.AddToCartMultipleUserAndProductTest -->
+      <class name="multicart.addtocart.test.AddToCartMultipleProductTest">
+        <methods>
+          <include name="signIn"/>
+          <include name="addToCart" invocation-numbers="0 1"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- multicart.addtocart.test.AddToCartMultipleProductTest -->
+    </classes>
+  </test> <!-- AddToCart(failed) -->
+</suite> <!-- Failed suite [MultiCart.com] -->
